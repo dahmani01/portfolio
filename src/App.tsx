@@ -18,9 +18,9 @@ type WindowChromeProps = {
   onExpand: () => void;
 };
 
-const cvPath = "/Ahmed_Dahmani_CV.pdf";
+const cvPath = `${import.meta.env.BASE_URL}Ahmed_Dahmani_CV.pdf`;
 // Keep this preview image in sync when replacing the PDF.
-const cvPreviewPath = "/Ahmed_Dahmani_CV_preview.png";
+const cvPreviewPath = `${import.meta.env.BASE_URL}Ahmed_Dahmani_CV_preview.png`;
 
 const toggleStylePhase = (phase: StylePhase): StylePhase =>
   phase === "plain" || phase === "closing" ? "opening" : "closing";
